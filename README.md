@@ -1,5 +1,10 @@
 # Alpine Snell Server Installer
 
+![License](https://img.shields.io/badge/License-MIT-green)
+![Alpine](https://img.shields.io/badge/Alpine-Linux-0D597F?logo=alpinelinux&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell-Script-89E051)
+![Arch](https://img.shields.io/badge/Arch-x86__64-orange)
+
 A lightweight installer for running the **official Surge Snell Server** on **Alpine Linux x86_64** without Docker.
 
 This approach was developed for very small NAT/LXC VPS instances where Docker image builds can easily run out of memory.
