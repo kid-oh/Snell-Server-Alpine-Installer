@@ -48,18 +48,13 @@ Snell v6 is beta/RC software. Check the official release notes before deploying.
 
 ## 🚀 Quick Start
 
+Download and run the installer:
+
 ```bash
 wget https://raw.githubusercontent.com/kid-oh/Snell-Server-Alpine-Installer/main/install-snell-alpine.sh
 
 chmod +x install-snell-alpine.sh
 
-./install-snell-alpine.sh
-```
-
-## Install
-
-```sh
-chmod +x install-snell-alpine.sh
 ./install-snell-alpine.sh
 ```
 
@@ -108,3 +103,19 @@ Existing Snell configuration is preserved, and the current binary is backed up b
 Surge Snell release notes:
 
 https://kb.nssurge.com/surge-knowledge-base/release-notes/snell
+
+## Acknowledgements
+
+This project was developed through personal research and extensive testing.
+
+Special thanks to OpenAI ChatGPT for assisting with troubleshooting, script refinement, documentation, and project organization throughout the development process.
+
+## Disclaimer
+
+This project is provided for educational and research purposes only.
+
+This repository contains an installation script only. The official Snell Server binary is downloaded directly from the official release source during installation.
+
+The author does not operate any proxy service, provide public nodes, or offer technical support for third-party deployments.
+
+Users are solely responsible for ensuring that their use of this project complies with the laws, regulations, and policies applicable in their own jurisdiction.
