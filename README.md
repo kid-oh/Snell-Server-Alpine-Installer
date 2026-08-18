@@ -5,9 +5,19 @@
 ![Shell](https://img.shields.io/badge/Shell-Script-89E051)
 ![Arch](https://img.shields.io/badge/Arch-x86__64-orange)
 
-A lightweight installer for running the **official Surge Snell Server** on **Alpine Linux x86_64** without Docker.
+A lightweight installer for running the official Surge Snell Server on Alpine Linux x86_64 without Docker.
 
-This approach was developed for very small NAT/LXC VPS instances where Docker image builds can easily run out of memory.
+Designed for tiny Alpine VPS instances (including 128 MB memory class) by creating an isolated Debian Bookworm glibc runtime while keeping Alpine's native musl environment untouched.
+
+## ✨ Features
+
+- Run the official Snell Server on Alpine Linux without Docker.
+- Automatically install an isolated Debian Bookworm glibc runtime.
+- Preserve Alpine's native musl environment.
+- Automatically remove `gcompat` to avoid loader conflicts.
+- Install and enable an OpenRC service.
+- Preserve existing Snell configuration during upgrades.
+- Designed for very small VPS instances (tested on 128 MB memory).
 
 ## Why this exists
 
@@ -35,6 +45,16 @@ from Debian Bookworm, then points `/lib64/ld-linux-x86-64.so.2` to the isolated 
 - Snell Server v6.0.0 RC2
 
 Snell v6 is beta/RC software. Check the official release notes before deploying.
+
+## 🚀 Quick Start
+
+```bash
+wget https://raw.githubusercontent.com/kid-oh/Snell-Server-Alpine-Installer/main/install-snell-alpine.sh
+
+chmod +x install-snell-alpine.sh
+
+./install-snell-alpine.sh
+```
 
 ## Install
 
