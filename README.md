@@ -68,9 +68,22 @@ Enter `Y`. It generates a random PSK and listening port.
 
 ## After installation
 
+### Common management commands
+
 ```sh
+# Check service status
 rc-service snell status
+
+# Start service
+rc-service snell start
+
+# Restart service
 rc-service snell restart
+
+# Stop service
+rc-service snell stop
+
+# View configuration
 cat /etc/snell/snell-server.conf
 ```
 
